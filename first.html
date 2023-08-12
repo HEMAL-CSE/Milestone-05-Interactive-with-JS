@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Introduce DOM</title>
+    <style>
+        body{
+            background-color: yellowgreen;
+        }
+    </style>
 </head>
 <body>
-    Hello
+    <header>
+        <h1>Welcome to DOM</h1>
+        <h1>My Awesome DOM</h1>
+    </header>
+    
+    <main>
+        <ol class="list">
+            <li>CSE</li>
+            <li>SWE</li>
+            <li>EEE</li>
+            <li>BBA</li>
+            <li>ICE</li>
+        </ol> 
+
+        
+        <ul>
+            <li>HEMAL</li>
+            <li>ZIHAD</li>
+            <li>SHOAB</li>
+            <li>ISRAT</li>
+            <li>TUSAR</li>
+            <li>ARIF</li>
+        </ul>
+       
+    </main> <br>
+
+
+<script src="first.js"></script>
+
+<script>
+    document.write('Website show us Js');
+
+    const licollection = document.getElementsByTagName('li');
+    console.log(licollection);
+    for(const li of licollection){
+        console.log(li.innerText)
+    }
+
+    const allheadings = document.getElementsByTagName('h1');
+    console.log(allheadings);
+    for(const h1 of allheadings){
+        console.log(h1.innerHTML);
+    }
+
+</script>
+
+
+
 </body>
 </html>
