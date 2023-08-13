@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About getElementID & Class</title>
+    <style>
+        body{
+            background-color: #8300cf1e;
+        }
+        #Fruits-Title{
+            color: red;
+        }
+
+        .F-name{
+            color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DOM</h1>
+        <h1>My Awesome DOM</h1>
+    </header>
+    
+    <main>
+        <h1>Subject-Title</h1>
+        <ul id="list">
+            <li class="list-no">CSE</li>
+            <li class="list-n2">SWE</li>
+            <li class="list-no">EEE</li>
+            <li class="list-no">BBA</li>
+            <li>ICE</li>
+        </ul>
+        
+        <setion>
+            <h1 id="Fruits-Title">Fruits I like Most</h1>
+            <ol>
+                <li class="F-name">Apple</li>
+                <li class="F-name">Orange</li>
+                <li class="F-name">Banana</li>
+                <li class="F-name">Mango</li>
+            </ol>
+        </setion>
+
+        <section>
+            <h2 class="p1">Place I like to visit</h2>
+            <li class="list-p">Dhaka</li>
+            <li>Sylhet</li>
+            <li>Khulna</li>
+        </section>
+       
+    </main> <br>
+
+
+
+<script>
+   const Fruits = document.getElementById('Fruits-Title')
+   console.log(Fruits.innerText)
+
+
+   const Place = document.getElementsByClassName('list-p')
+   console.log(Place)
+
+  const F =  document.getElementsByClassName('F-name')
+  console.log(F)
+
+  const jayga=document.getElementById('p1')
+//   console.log(jayga.innerText)
+ 
+</script>
+
+
+
+</body>
+</html>
