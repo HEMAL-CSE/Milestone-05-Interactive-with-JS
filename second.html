@@ -51,12 +51,21 @@
             <li>Sylhet</li>
             <li>Khulna</li>
         </section>
+
+         <section class="uni-container">
+            <h1>Top University</h1>
+            <li class="nsu">NSU</li>
+            <li class="diu">DIU</li>
+            <li class="uiu">UIU</li>
+            <li>MIU</li>
+        </section>
        
     </main> <br>
 
 
-
 <script>
+    // getElementById and getElementbyClassName
+
    const Fruits = document.getElementById('Fruits-Title')
    console.log(Fruits.innerText)
 
@@ -68,7 +77,30 @@
   console.log(F)
 
   const jayga=document.getElementById('p1')
-//   console.log(jayga.innerText)
+  console.log(jayga.innerText)
+
+  //Queryselector; getElementByQuerySelector; querySelectorAll()
+
+  const seli = document.querySelectorAll('.F-name')
+  console.log(seli);
+
+for(const li of seli){
+    console.log(li.innerText)
+    // console.log(seli)
+}
+
+//Now we select specify, querySeelctor, like 
+const U=document.querySelector('.diu')
+console.log(U.innerText)
+
+// Full section part is selected by section id
+const con = document.querySelector('.uni-container')
+console.log(con.innerText)
+
+const con2=document.querySelectorAll('.nsu')
+console.log(con2)
+
+
  
 </script>
 
